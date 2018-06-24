@@ -23,12 +23,34 @@ button{
 main{
     display: flex;
 }
-#mainx{
+#main{
     margin: 0 auto;
 }
-#mainx div:nth-child(2){
-    margin-left: 2em;
+#main div:nth-child(2){
+    margin-left: 55px;
 }
-#mainx div:nth-child(3){
-    margin-left: 4em;
+#main div:nth-child(3){
+    margin-left: 70px;
+}
+#main div:nth-child(4){
+    margin-left: 100px;
+}
+.key{
+    width: 50px;
+    height: 40px;
+    border: 1px solid #373737;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%);
+    color: #fff;
+    font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 3px 0 2px #080808;
+}
+.row{
+    margin: 20px;
+}
+.row .key{
+    margin: 0 10px;
 }
