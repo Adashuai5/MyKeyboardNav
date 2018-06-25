@@ -22,6 +22,13 @@ button{
 }
 main{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+body{
+    background:#aba0a6 url(./wall.jpg) no-repeat center center;
+    background-size: cover;
 }
 #main{
     margin: 0 auto;
@@ -33,7 +40,11 @@ main{
     margin-left: 70px;
 }
 #main div:nth-child(4){
-    margin-left: 100px;
+    margin-left: 102px;
+}
+.wrapper{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 .key{
     width: 50px;
@@ -43,14 +54,24 @@ main{
     background: linear-gradient(to bottom, #292929 0%,#111111 100%);
     color: #fff;
     font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 3px 0 2px #080808;
+    position: relative;
 }
 .row{
     margin: 20px;
 }
 .row .key{
     margin: 0 10px;
+}
+.key img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+}
+.key .text{
+    position: absolute;
+    left: 4px;
+    top: 2px;
 }

@@ -42,17 +42,30 @@
             index2 = 0
             while (index2 < row.length){
                 kbd = document.createElement('kbd')
-                kbd.textContent = row[index2]
+                span = document.createElement('span')
+                span.textContent = row[index2]
+                span.className = 'text'
                 kbd.className = 'key'
                 button = document.createElement('button')
                 button.textContent = 'new'
                 button.id = row[index2]
+                img = document.createElement('img')
+                if(hash[row[index2]]){
+                    img.src = 'http://' + hash[row[index2]] + '/favicon.ico'
+                }else
+                    img.src = '//i.loli.net/2017/11/10/5a05afbc5e183.png'
+                img.onerror = function(error){
+                    error.target.src ='//i.loli.net/2017/11/10/5a05afbc5e183.png'
+                }
                 button.onclick = function(xzkjcnxlkcjlk){
+                    //xzkjcnxlkcjlk.target 就是用户点击的元素
                     key = xzkjcnxlkcjlk.target.id
                     x = prompt('给我一个网址')
-                    hash[key] = x
+                    hash[key] = x // hash 变更
                     localStorage.setItem('uuu', JSON.stringify(hash))//缓存用户已编辑的新链接                    
                 }
+                kbd.appendChild(span)
+                kbd.appendChild(img)
                 kbd.appendChild(button)
                 div.appendChild(kbd)
                 index2 ++
