@@ -1,0 +1,25 @@
+.timer {
+    display: inline;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding-top: 24px;
+    width: 60px;
+    border: none;
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    background: transparent;
+    color: wheat;
+    font-weight: 700;
+
+}
+
+.unitName {
+    color: wheat;
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
